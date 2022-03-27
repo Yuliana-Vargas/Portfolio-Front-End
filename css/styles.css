@@ -1,0 +1,498 @@
+*, *::after, *::before{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/3.jpg);
+    font-family: 'Poppins', sans-serif;
+}
+
+#main-container{
+    display: grid;
+    grid-gap: 15rem;
+    align-content: center;
+}
+
+/* nav styling **************************************/ 
+.header{
+    height: 80px;
+    position:fixed;
+    width:100vw;
+    top: 0;
+    left:0;
+}
+
+.nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    min-width: 370px;
+}
+
+.nav-menu{
+    display:flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    width:max-content;
+}
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-menu-link:hover{
+    color: crimson;
+    transition: .4s;
+}
+
+.nav-btn-login:hover{
+    transform: scale(1.2);
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-btn-login{
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 15px;
+    margin: 20px;
+    border-radius: 30px;
+    transition: transform .4s;
+    line-height: 40px;
+    
+}
+
+.gg-menu-grid-o {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 16px;
+}
+.gg-menu-grid-o::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: currentColor;
+    box-shadow:
+        0 6px 0,
+        6px 6px 0,
+        12px 6px 0,
+        6px 12px 0,
+        12px 12px 0,
+        6px 0 0,
+        12px 0 0,
+        0 12px 0
+    ;
+    border-radius: 22px;
+
+}
+.nav-toggle{
+    color:crimson;
+    background:none;
+    border: none;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display:none;
+    cursor: pointer;
+}
+
+
+
+/* Presentation styling***************************************/
+.introduction{
+    height: 100vh;
+    background-color: rgba(3, 3, 3, 0.9);
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.introduction-box{
+    border-radius: 30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px;
+}
+
+.introduction-box h1{
+    color: white;
+    font-size: 75px;
+    
+}
+
+.introduction-box h3{
+    color: crimson;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.introduction-box h4{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+span{
+    color: crimson;
+}
+
+
+/* About me styling ****************************************/
+.about{
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    grid-auto-rows: 25rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,30rem), 1fr));
+    min-width: 310px;
+    width:90vw;
+    margin: auto;
+}
+
+.container-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+   
+}
+
+.container-img img{
+    max-width:100%;
+    border-radius: 50%;
+}
+
+.about .box{
+    min-height: 500px;
+}
+
+.container-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.container-text p{
+    color: white;
+    letter-spacing: 2px;
+    line-height: 28px;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.container-text h2{
+    color:white;
+    font-size: 50px;
+}
+
+
+/* Formation styling ***************************************/
+.formation{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 25rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,20rem), 1fr));
+    width:90vw;
+    min-width: 310px;
+    align-content: center;
+    margin:auto;
+}
+
+.title{
+    color:white;
+    font-size: 2rem;
+}
+
+.btn-right{  
+    border-radius:50%;  
+    color: crimson;
+    font-size: 1.5rem;
+}
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:rgba(3, 3, 3, 0.9);
+    border-radius:20px;
+    justify-content:center;
+
+}
+
+.card{
+    color:white;
+    text-align: center;
+
+}
+.card h4{
+    color: white;
+}
+
+.card ul li{
+    list-style-type: none;
+}
+
+.fecha{
+    color: white;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+
+/* Footer styling ************************************/
+.footer{
+    display:grid;
+    background-color: black;
+    height:25rem;
+    align-content: center;
+    justify-content:center;
+}
+
+.social{
+    display: flex;
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.social-icon{   
+  background-color: rgb(6, 117, 234);
+  border-radius:50%;
+  margin: 15px;
+  width:40px;
+  height:40px;
+  font-size: 29px;
+}
+
+.github {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+  
+  a::before,
+  a::after {
+   content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  a::before {
+    background-color: #d11b70;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  
+  a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    vertical-align: top;
+  }
+
+/* ----------------------------------------------------------*/
+.overlay{
+    display:grid;
+    backdrop-filter: blur(10px);
+    align-content: center;
+    justify-content:center;
+    height:100vh;
+}
+
+/* Start form  attributes */
+.form-login {
+    background-color: black;
+    padding: 5%;
+    border-radius: 30px;
+    border-color: crimson;
+    border-style:solid;
+
+}
+/* form Container */
+form .con {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* the header form form */
+.head-form {
+    margin: 2% auto 10% auto;
+}
+/* Login title form form */
+.head-form h2 {
+    font-size: 250%;
+    color: rgb(6, 117, 234);
+}
+
+
+/* //////////////////////////////////////////// */
+
+/* inputs form  */
+input[class="form-input"]{
+    width: 280px;
+    height: 50px;
+  
+    margin-top: 2%;
+    padding: 15px;
+    
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+  
+    outline: none;
+    border: none;
+  
+    border-radius: 20px;
+    transition: 0.2s linear;
+    
+    
+}
+/* focus  */
+input:focus {
+    transform: translateX(-2px);
+    border-color: crimson;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow:  0 0 18px rgba(241, 118, 138, 0.932);
+}
+
+/* //////////////////////////////////////////// 
+/* //////////////////////////////////////////// 
+
+/* buttons  */
+.log-in {
+    display: inline-block;
+    color: black;
+    font-size:15px;
+    font-weight: bold;
+  
+    width: 280px;
+    height: 50px;
+  
+    padding: 0 20px;
+    background: rgb(6, 117, 234);
+    border-radius: 5px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+    
+}
+
+
+/* buttons hover */
+.log-in:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+
+
+
+/* ----------------------------------------------------------*/
+
+
+
+@media (max-width: 768px) {
+   
+    .body{
+        padding-top: 60px;
+    }
+
+    .header{
+        height: 60px;
+ 
+    }
+    
+    .logo{
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+   
+
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+        margin-left: 0px;
+        background-color: black;
+        position:fixed;
+        left: 0;
+        top:60px;
+        width:100vw;
+        padding:20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+        min-width: 370px;
+    }
+    
+    .nav-menu-item{
+        line-height:70px;
+    }
+    .nav-menu-link:hover{
+        color: crimson;
+        transition: .4s;
+    }
+
+    .nav-toggle{
+        display:block;
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+
+    .nav-toggle:focus:not(:focus-visible){
+        outline: none;
+    }
+}
